@@ -28,4 +28,6 @@ spec:
   syncPolicy:
     automated:
       prune: true       # Automatically deletes resources no longer in Git
-      selfHeal: true  
+      selfHeal: true 
+    syncOptions:
+      - CreateNamespace=true
